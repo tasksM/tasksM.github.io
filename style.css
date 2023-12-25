@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+.main{
+    height: 100%;
+    width:100%;
+}
+.data{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    left: 120px;
+    padding: 10px;
+    width: 180px;
+    margin-left: 25px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.693);
+}
+
+.data h4::before{
+    content: " ";
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 150px;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.data1{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    left: 120px;
+    padding: 10px;
+    width: 150px;
+    margin-left: 25px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.693);
+}
+
+.data1 h4::before{
+    content: " ";
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: rgb(255, 20, 20);
+    position: absolute;
+    left: 140px;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.data2 h4::before{
+    content: " ";
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: rgb(249, 192, 57);
+    position: absolute;
+    left: 150px;
+    z-index: 1;
+    margin-right: 10px;
+}
+.track{
+    position:relative;
+    top: 100px;
+    height: 30px;
+   margin: 20px;
+    background: rgb(251, 236, 236);
+    border: 2px solid black;
+   
+}
+.fill{
+    height: 30px;
+    background-color: rgb(61, 255, 87);
+    width: 50.9%;
+    transition: ease .7s;
+}
+
+.per{
+    position: relative;
+    top: 96px;
+    text-align: center;
+    font-size: 25px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 50vh;
+    padding: 20px;
+    top:70%;
+    left:5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.634);
+    width:90%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.inpdata{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(255, 226, 226);
+    border-radius: 30px;
+}
+
+.list{
+   font-size: 30px;
+    width: 500px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 30px;
+    color: black;
+    padding-left: 25px;
+}
+
+.save{
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(255, 120, 120);
+    padding: 3px 20px 3px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: ease .4s;
+}
+
+.save:hover{
+    background-color: rgb(255, 57, 67);
+}
+
+.lip{
+     display: block;
+   width: 100%;
+   text-align: left;
+   height: 200px;
+    overflow-y: scroll;
+}
+.tasks{ 
+    display:block;
+    text-align: left;
+}
+
+.tasks li{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.tasks li p{
+    padding: 0;
+    height: 30px;
+    margin: 0;
+}
+
+.complete::before{
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: rgb(44, 255, 37);
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    left: -48px;
+    z-index: 1;
+}
+
+.panding::before{
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 37, 37);
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    left: -48px;
+    z-index: 1;
+}
+
+.tasks li span{
+    position: relative;
+    left: 800px;
+   height: 40px;
+   
+    background-color: rgb(255, 63, 63);
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 15px black;
+    font-size: bold;
+    color: white;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.tasks li span:hover{
+    background-color: rgb(255, 23, 23);
+}
+
+.btn{
+    position: relative;
+    left: 500px;
+    background-color: rgb(63, 124, 255);
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 15px black;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: ease .5s;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+}
+
+.btn:hover{
+    background-color: rgb(105, 85, 255);
+}
+
+.warp{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #cccc;
+}
+
+.cont2{
+    display: none;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 20%;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    border-radius: 0%;
+    box-shadow: 2px 3px 16px black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .cont{
+        top: 90%;
+        width: 100%;
+        left: 0;
+    }
+
+    .track{
+        top: 148px;
+    }
+
+    .per{
+        top:150px;
+    }
+
+    .data{
+        left: 50px;
+        margin-bottom:20px ;
+    }
+
+    .data1{
+        left: 50px;
+        margin-bottom:20px ;
+    }
+}
